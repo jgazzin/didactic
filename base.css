@@ -1,0 +1,75 @@
+:root{
+    --fondo: #ffd061;
+    --cuentos-lecto: #00c4cc;
+    --cuentos-motri: #ff738e;
+    --cubos-abc: #a548ff;
+    --rompecabezas: #ffa53b;
+    --mini-minina: #6422b8;
+    --arte: #7ed957;
+
+    --texto--ppal: 'Just Another Hand', cursive;
+    --texto--gral: 'Amiko', sans-serif; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+    box-sizing: border-box;
+    height: calc(100vh-30px);
+
+    display: flex;
+    align-items: center;
+}
+
+h1, h2{
+    font-family: var(--texto--ppal);
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+h3, p{
+    font-family: var(--texto--gral);
+}
+a{
+    text-decoration: none;
+}
+
+.menu{
+    position: fixed;
+    left: 25px;
+    top: calc(100vh/3);
+}
+
+.fa-brands,
+.fa-solid{
+    scale: 2.5;
+    margin-bottom: 50px;
+    color: white;
+}
+
+
+/* -- footer -- */
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    color: white;
+    letter-spacing: 2px;
+
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h3{
+    border-right: 1px solid white;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
