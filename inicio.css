@@ -6,25 +6,69 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .header h1{
-    font-size: 8rem;
+    font-size: 7rem;
     letter-spacing: 10px;
-    margin-top: 50px;
 }
 
 .header h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 5px;
 }
 
-.header img{
+.header p{
+    color: white;
+}
+
+.hero{
     width: calc((100vw/2) - 50px);
     margin: auto;
-    margin-top: 100px;
 }
+
+.logo{
+    width: 100px;
+}
+
+.icon{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon__item{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon__item img{
+    width: 100px;
+    margin: auto;
+}
+
+.icon__item:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.icon__item h2{
+    font-size: 1.2rem;
+}
+
+#info__inicio{
+    height: 100px;
+}
+
+.info__inicio--mobile{
+    display: none;
+}
+
 
 .coleccion {
     width: 50%;
@@ -63,13 +107,13 @@
 
 .coleccion__section h3{
     letter-spacing: 1px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 
 /* --- responsivo --- */
 
-@media (max-width: 990px) {
+@media (max-width: 1020px) {
     
     body{
         flex-direction: column;
@@ -80,7 +124,11 @@
         width: 100%;
     }
 
-    .header img {
+    .header h1{
+        font-size: 7rem;
+    }
+
+    .hero {
         width: calc(100vw/1.5);
         margin: auto;
     }
@@ -88,4 +136,53 @@
     .coleccion{
         width: 100%;
     }
+
+    .icon{
+        max-width: 500px;
+    }
+
 }
+
+@media (max-width: 620px) {
+    .header{
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .coleccion{
+        grid-template-columns: 1fr;
+    }
+
+    .header h1{
+        font-size: 5rem;
+    }
+    .header h2{
+        font-size: 1.5rem;
+    }
+
+    .icon{
+        margin: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .icon__item{
+        align-items: center;
+    }
+
+    #info__inicio{
+        display: none;
+    }
+    .info__inicio--mobile{
+        display: block;
+    }
+    .texto{
+        margin: 20px 20px;
+    }
+
+    .hero{
+        margin-bottom: 10px;
+    }
+    
+}
+

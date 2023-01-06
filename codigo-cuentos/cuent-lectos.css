@@ -46,19 +46,54 @@ body{
 
 /* --- responsivo --- */
 
-@media (max-width: 990px) {
-    .coleccion{
+@media (max-width: 1020px) {
+    
+    body{
         flex-direction: column;
-        position: relative;
-        width: 100%;
     }
 
     .header{
-        height: calc(100vh);
+        height: calc(100vh - 30px);
         width: 100%;
     }
 
-    .coleccion__section{
-        width: 100%;
+    .header h1{
+        font-size: 7rem;
     }
+
+    .hero {
+        width: calc(100vw/1.5);
+        margin: auto;
+    }
+
+    .coleccion{
+        flex-direction: column;
+        position: inherit;
+    }
+
+    .coleccion__section{
+        width: 100vw;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .header{
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .coleccion{
+        grid-template-columns: 1fr;
+    }
+
+    .header h1{
+        font-size: 5rem;
+    }
+    .header h2{
+        font-size: 1.5rem;
+    }
+
+    
 }
