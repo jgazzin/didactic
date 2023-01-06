@@ -10,12 +10,12 @@
 }
 
 .header h1{
-    font-size: 7rem;
+    font-size: 5rem;
     letter-spacing: 10px;
 }
 
 .header h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 5px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .hero{
-    width: calc((100vw/2) - 50px);
+    width: 80%;
     margin: auto;
 }
 
@@ -113,7 +113,7 @@
 
 /* --- responsivo --- */
 
-@media (max-width: 1020px) {
+@media (max-width: 1040px) {
     
     body{
         flex-direction: column;
@@ -125,12 +125,12 @@
     }
 
     .header h1{
-        font-size: 7rem;
+        font-size: 5rem;
+        margin-top: 20px;
     }
 
     .hero {
-        width: calc(100vw/1.5);
-        margin: auto;
+        margin: 10px auto 20px;
     }
 
     .coleccion{
@@ -143,7 +143,7 @@
 
 }
 
-@media (max-width: 620px) {
+@media (max-width: 670px) {
     .header{
         height: auto;
         margin-top: 20px;
@@ -154,10 +154,10 @@
     }
 
     .header h1{
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .header h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .icon{
