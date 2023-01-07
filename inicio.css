@@ -38,8 +38,6 @@
 .hero{
     width: 500px;
     margin: auto;
-    /* position: absolute;
-    bottom: 40px; */
 }
 
 .logo{
@@ -75,6 +73,7 @@
 
 #info__inicio{
     height: 100px;
+    margin: 0 15%;
 }
 
 .info__inicio--mobile{
@@ -99,7 +98,6 @@
     justify-content: center;
     text-align: center;
     color: white;
-    font-size: 1.5rem;
 }
 
 .coleccion__section.sec1{
@@ -133,10 +131,11 @@
     
     body{
         flex-direction: column;
+        height: auto;
     }
 
     .header{
-        height: auto;
+
         width: 100%;
     }
 
@@ -161,7 +160,7 @@
 }
 
 @media (max-width: 670px) {
-    .header{
+    .body{
         height: auto;
     }
 

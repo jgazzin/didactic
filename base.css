@@ -28,7 +28,7 @@ body{
     padding: 0;
     background-color: var(--fondo);
     box-sizing: border-box;
-    /* height: calc(100vh-30px); */
+    height: calc(100vh-30px);
     width: 100%;
 
     display: flex;
@@ -70,7 +70,7 @@ a{
 }
 
 .texto{
-    margin: 20px 80px;
+    margin: 20px 0;
     text-align: justify;
     box-sizing: border-box;
 }
