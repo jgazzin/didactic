@@ -10,7 +10,7 @@
 }
 
 .header h1{
-    font-size: 2rem;
+    font-size: 32px;
     letter-spacing: 10px;
 }
 
@@ -25,7 +25,7 @@
 
 
 .header h2{
-    font-size: 1.2rem;
+    font-size: 18px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -47,10 +47,11 @@
 }
 
 .icon{
-    width: 80%;
-    margin: 0 auto;
+    width: 76%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .icon__item{
@@ -122,7 +123,7 @@
 
 .coleccion__section h3{
     letter-spacing: 5px;
-    font-size: 1.8rem;
+    font-size: 28px;
     line-height: 1.5;
 }
 
@@ -135,7 +136,7 @@
     }
 
     .header{
-        height: calc(100vh - 30px);
+        height: auto;
         width: 100%;
     }
 
@@ -149,6 +150,12 @@
 
     .icon{
         max-width: 600px;
+    }
+
+    .hero{
+        width: 70%;
+        position: relative;
+        margin: 40px 0;
     }
 
 }
@@ -194,11 +201,7 @@
         margin: 20px 20px;
     }
 
-    .hero{
-        width: 70%;
-        position: relative;
-        margin: 40px 0;
-    }
+
     
 }
 
